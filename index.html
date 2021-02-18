@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <h1 id="time">00:00</h1>
+        </div>
+
+        <div class="information">
+            <div id="state">
+                <h1 id="session-count">Session 1 !</h1>
+            </div>
+
+            <div class="modify">
+                <div class="session">
+                    <p class="p1">session time</p>
+                    <p id="st"class="p2" style="color: rgba(44, 184, 177, 0.966);">0 min</p>
+                    <button class="bt" onclick="sessionSub()">-</button>
+                    <button class="bt" onclick="sessionAdd()">+</button>
+                </div>
+                <div class="break">
+                    <p class="p1" >break time</p>
+                    <p id="brt"class="p2" style="color: orange;">0 min</p>
+                    <button class="bt" onclick="breakSub()">-</button>
+                    <button class="bt" onclick="breakAdd()">+</button>
+                </div>
+
+            </div>
+
+            <div class="buttons">
+                <button onclick="start()"id="start-button"class="bt2" style="margin-right: 15px;">Start</button>
+                <button onclick="reset()"id="reset-button"class="bt2" style="margin-left: 15px;">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
